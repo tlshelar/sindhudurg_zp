@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+<html>
+
+<!-- Mirrored from punezp.mkcl.org/zillaParishad/citizenRegistration/getRegistrationForm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Aug 2021 07:18:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+
+
+<title>Citizen Registration</title>
+<link rel="icon"
+	href="../resources/new-theme/images/logo-pune-zp.png"
+	type="image/ico">
+
+<link rel="stylesheet" type="text/css"
+	href='../resources/new-theme/css/style.css' />
+
+<script type="text/javascript"
+	src="../resources/new-theme/js/jquery.min.js"></script>
+<script type="text/javascript"
+	src="../resources/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript"
+	src="../resources/js/multiLingualSelect2.js"></script>
+
+<script type="text/javascript"
+	src="../resources/js/form-wizard.js"></script>
+
+<script type="text/javascript"
+	src="../resources/js/utilities.js"></script>
+<script type="text/javascript"
+	src="../resources/js/Verhoeff.js"></script>
+
+<script type="text/javascript"
+	src="../resources/new-theme/js/bootstrap.min.js"></script>
+
+<!-- Shubham -->
+<link rel="stylesheet" href="../resources/style/bootstrap.min.css">
+
+<script src="../resources/js/bootstrap.min.js"></script>
+
+<!-- CSS -->
+<link href="../resources/new-theme/css/form-wizard-blue.css"
+	rel="stylesheet" type="text/css">
+<link href="../resources/style/jquery-ui.min.css" rel="stylesheet"
+	type="text/css">
+<link rel="stylesheet" type="text/css"
+	href='../resources/new-theme/css/jquery.bootstrap-touchspin.min.css' />
+
+<style type="text/css">
+.error {
+	color: red;
+}
+
+.disabled {
+	color: rgba(116, 112, 141, 0.92)
+}
+
+.fontStyle {
+	font-size: 15px;
+}
+
+.no-js #loader {
+	display: none;
+}
+
+.js #loader {
+	display: block;
+	position: absolute;
+	left: 100px;
+	top: 0;
+}
+
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background:
+		url(../../../smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.html)
+		center no-repeat #fff;
+}
+
+.green {
+	color: green;
+}
+</style>
+</head>
+
+<body class="body-bg-full profile-page">
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">अटी आणि शर्ती</h4>
+				</div>
+				<div class="modal-body">
+					<p>शासनामार्फत वेळोवेळी जाहीर होत असलेल्या विविध योजनांची
+						पात्रता तपासण्यासाठी संबंधित अर्जदारांच्या आधार क्रमांकाची माहिती
+						सदर वेब-पोर्टल द्वारे घेतली जाते. आधार क्रमांकाचा उपयोग हा निव्वळ
+						योजनेसाठी संबंधित अर्जदारांची पात्रता पडताळणी करण्यासाठी केला
+						जातो. अर्जदारांचा आधार क्रमांक हा वेब-पोर्टल मध्ये Bcrypt Hash
+						Function द्वारे Hash म्हणजे कुटबद्ध केला जातो. आधार क्रमांकाची
+						नोंद या वेब-पोर्टल मध्ये होत नाही. तसेच हा आधार क्रमांक जिल्हा
+						परिषदेच्या कोणत्याही पदाधिकाऱ्यास अथवा अन्य त्रयस्थ व्यक्तीस
+						उपलब्ध होत नाही. तसेच अर्जदारांची वैयक्तिक जी माहिती घेतली जाते
+						उदा. संपूर्ण नाव, वैवाहिक स्थिती, जन्म दिनांक, मोबाईल क्रमांक,
+						शैक्षणिक माहिती, आरोग्य विषयक माहिती, बँकेची माहिती,.हि घेतली जाते
+						त्याचा उपयोग संबंधित अर्जदारांची विविध योजनांसाठी पात्रता
+						तपासण्यासाठी केला जातो. हि वैयक्तिक माहिती जिल्हा परिषदेच्या
+						कोणत्याही पदाधिकाऱ्यास अथवा अन्य त्रयस्थ व्यक्तीस उपलब्ध होत नाही.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">ठीक
+						आहे</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="wrapper" class="row wrapper multi-step-signup">
+		<div class="row container-min-full-height align-items-center">
+			<div
+				class="col-10 ml-sm-auto col-sm-6 col-md-4 ml-md-auto login-center login-center-mini mx-auto">
+				<div class="navbar-header text-center mt-2 mb-4">
+					<a href="#"> <img alt="Pune ZP"
+						src="../resources/new-theme/images/logo-pune-zp.png"
+						class="login-logo">
+					</a> <a href="#"> <img alt="Pune ZP Maha Labharthi"
+						src="../resources/new-theme/images/logo-mahalabharthi.jpg"
+						class="login-logo">
+					</a>
+					<h3 class="logo-text">
+						पुणे जिल्हा परिषद
+					</h3>
+				</div>
+				<!-- /.navbar-header -->
+
+				<!-- Form Wizard -->
+				<div class="form-wizard form-header-classic form-body-classic"
+					data-target="#registerForm">
+
+					<h5 class="box-title mr-b-6">
+						नागरिक नोंदणी
+					</h5>
+
+					<div class="help-text text-danger" style="text-align: center;">
+						नोंदणी फक्त पुणे जिल्ह्यातील ग्रामीण भागातील राहिवाशांकरीता    आहे.
+					</div>
+					<div class="navbar-header text-center mt-2">
+						<a target="_blank"
+							href="../../CDNGatewayV2/resources/public/ProjectResources/Process_flow_V2.mp4">
+							नोंदणी पूर्वी हा व्हिडिओ अवश्य बघा
+						</a>
+					</div>
+
+
+					<!-- Form progress -->
+					<div class="form-wizard-steps form-wizard-tolal-steps-3">
+						<div class="form-wizard-progress">
+							<div class="form-wizard-progress-line" data-now-value="12.25"
+								data-number-of-steps="3" style="width: 12.25%;"
+								id="progressLine"></div>
+						</div>
+						<!-- Step 1 -->
+						<div id="step-1" class="form-wizard-step">
+							<div class="form-wizard-step-icon">
+								<span>1</span>
+							</div>
+							<p>
+								सध्याचा मोबाईल क्रमांक आणि आधार क्रमांक
+							</p>
+						</div>
+						<!-- Step 1 -->
+
+						<!-- Step 2 -->
+						<div id="step-2" class="form-wizard-step">
+							<div class="form-wizard-step-icon">
+								<span>2</span>
+							</div>
+							<p>
+								वैयक्तिक माहिती
+							</p>
+						</div>
+						<!-- Step 2 -->
+
+						<!-- Step 3 -->
+						<div id="step-3" class="form-wizard-step">
+							<div class="form-wizard-step-icon">
+								<span>3</span>
+							</div>
+							<p>
+								ओटीपी (OTP) पडताळणी
+							</p>
+						</div>
+						<!-- Step 3 -->
+					</div>
+					<!-- Form progress -->
+				</div>
+				<!-- Form Wizard -->
+
+				
+
+
+
+
+
+
+
+
+
+				<div class="col-md-12">
+					<div class="widget-bg">
+						<div class="widget-body clearfix">
+							<form id="registerForm" class="form" action="https://punezp.mkcl.org/zillaParishad/citizenRegistration/step2" method="POST">
+
+								<input id="stepNumber" name="stepNumber" type="hidden" value="1"/>
+								<input id="loginAccount.loginId" name="loginAccount.loginId" type="hidden" value=""/>
+
+								
+									
+
+										<!-- Step 1 -->
+
+										<fieldset id="signup-step-1"
+											class="form-material active animated fadeInRight">
+
+											<div class="form-group no-gutters">
+												<label for="mobile" id="lbl-mobile"> मोबाईल
+												</label> <input id="mobile" name="loginAccount.mobileNumber"
+													required="required" maxlength="10"
+													class="allnum form-control form-control-line">
+											</div>
+											
+
+											<div class="error" hidden="true" id="mobileErrorDiv">
+												आपण दिलेला मोबाइल क्रमांक चुकीचा  आहे .
+											</div>
+
+											
+
+											
+
+											<input id="username" name="person.aadhaarNumber" type="hidden" value=""/>
+											<div class="form-group no-gutters">
+												<label for="aadhaarVer" id="lbl-aadhaar"> तुमचा आधार क्रमांक
+												</label>
+												<div class="row aadhar-row">
+													<div class="col-4">
+														<input id="aadhaarVer1" type="password"
+															oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+															required="required" maxlength="4" autocomplete="off"
+															class="form-control form-control-line allnum">
+													</div>
+													<div class="col-4">
+														<input id="aadhaarVer2" type="password"
+															oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+															required="required" maxlength="4" autocomplete="off"
+															class="form-control form-control-line allnum">
+													</div>
+													<div class="col-4">
+														<input id="aadhaarVer3" type="text"
+															oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+															required="required" maxlength="4" autocomplete="off"
+															class="form-control form-control-line allnum">
+													</div>
+												</div>
+											</div>
+
+											<div>
+												
+											</div>
+											<div class="error" hidden="true" id="aadhaarErrorDiv">
+												आपण दिलेला आधार कार्ड क्रमांक चुकीचा  आहे 
+											</div>
+											
+
+										</fieldset>
+
+										<div class="row">
+											<div class="col-auto">
+												<input type="checkbox" id="chkcheckbox" class="dataCheck"
+													onchange="isChecked(this, 'step2Post')"
+													class="btn btn-info btn-lg" />
+
+												<!-- data-toggle="modal" data-target="#myModal" -->
+
+											</div>
+											<div class="col col-form-label terms">
+												<label class="fontStyle text-dark" for="chkcheckbox">
+													मला सर्व अटी आणि शर्ती मान्य आहेत . </label>
+											</div>
+										</div>
+
+
+										<div class="form-actions">
+											<div class="form-group row">
+												<div class="col-md-12 btn-list">
+
+													
+
+													<button
+														class="btn btn-block btn-primary text-uppercase btn-next"
+														id="step2Post" type="submit" disabled="disabled">
+														पुढे जा
+													</button>
+												</div>
+											</div>
+										</div>
+
+									
+
+									
+
+									
+								
+							<div>
+<input type="hidden" name="_csrf" value="28510218-4d1f-4811-a117-76a805c3f3ce" />
+</div></form>
+						</div>
+					</div>
+				</div>
+
+				<!-- /.form-material -->
+				<footer class="col-sm-12 login-footer">
+					<a href="../../cas/login093b.html" class="login-link"> लॉगिन करण्यासाठी  इथे क्लिक करा 
+					</a>
+				</footer>
+			</div>
+			<!-- /.login-right -->
+		</div>
+		<!-- /.row -->
+	</div>
+
+	
+	<script type="text/javascript"
+		src="../resources/new-theme/js/material-design.js"></script>
+	<script src="../resources/js/jquery.plugin.min.js"></script>
+	<script src="../resources/js/axios.min.js"></script>
+
+	<script type="text/javascript">
+
+	var countDownVariable = null;
+	var countDownTime;
+	
+
+	$(document).ready(function() {
+
+		$("#nameEn").keypress(function(event){
+	        var inputValue = event.charCode;
+	        if(!((inputValue >= 65 && inputValue <= 90) || (inputValue >= 97 && inputValue <= 122)) && (inputValue != 32 && inputValue != 0)) {
+	            event.preventDefault();
+	        }
+	    });
+
+		$("#nameMr").keypress(function(event){
+	        var inputValue = event.charCode;
+	        if(!((inputValue >= 65 && inputValue <= 90) || (inputValue >= 97 && inputValue <= 122)) && (inputValue != 32 && inputValue != 0)) {
+	            event.preventDefault();
+	        }
+	    });
+	    
+		$('#aadhaarVer1').on('paste' , function(e){
+			var data = e.originalEvent.clipboardData.getData('Text');
+
+			var arr = data.match(/.{1,4}/g);
+			if (arr.length > 1) {
+				$('#aadhaarVer2').val(arr[1])		
+			}
+			if (arr.length > 2) {
+				$('#aadhaarVer3').val(arr[2])
+			}
+			$('#username').val($('#aadhaarVer1').val() + $('#aadhaarVer2').val() + $('#aadhaarVer3').val())
+		});
+		
+		$("#aadhaarVer1").keyup(function(e){
+			  if ($("#aadhaarVer1").val().length >= 4) {
+				  $("#aadhaarVer2").focus();
+			  }
+			  $('#username').val($('#aadhaarVer1').val() + $('#aadhaarVer2').val() + $('#aadhaarVer3').val())
+		});
+		$("#aadhaarVer2").keyup(function(e){
+			if(e.keyCode == 8 && $("#aadhaarVer2").val().length <= 0) {
+				$("#aadhaarVer1").focus();
+			  }
+			if ($("#aadhaarVer2").val().length >= 4) {
+				  $("#aadhaarVer3").focus();
+			}
+			$('#username').val($('#aadhaarVer1').val() + $('#aadhaarVer2').val() + $('#aadhaarVer3').val())
+		});
+
+		$("#aadhaarVer3").keyup(function(e){
+			if(e.keyCode == 8 && $("#aadhaarVer3").val().length <= 0) {
+				$("#aadhaarVer2").focus();
+			  }
+			$('#username').val($('#aadhaarVer1').val() + $('#aadhaarVer2').val() + $('#aadhaarVer3').val())
+		});
+		
+		$("#resendOTPBtn").hide();
+		
+		switch(1){
+		case 1:
+			$("#registerForm").attr("action", "step2.html");
+			$("#progressLine").width("12.5%");
+			$("#step-1").addClass("active");
+			$("#mobile").focus();			
+			break;
+			
+		case 2:
+			
+			$("#registerForm").attr("action", "step3.html");
+			$("#progressLine").width("50%");
+			$("#step-1").addClass("done");
+			$("#step-2").addClass("active");
+			$("#sal-1").focus();
+
+			var axiosForTrasliteration = axios.create({ baseURL: 'https://www.google.com/inputtools/request' });
+	    	
+	        $("#nameMr").bind('paste', function() {
+	            $('#pasteEventError').html('You Can not Paste Text Here.!');
+	            $("#nameMr").val("");
+	            return false;
+	        });
+	        
+	        $("#nameMr").on('textInput',function(event){
+	    		if(event.originalEvent.data.charCodeAt(0) == 32){
+	    			let content = $("#nameMr").val();
+					let arr = content.split(' ');
+					let currentVal = arr[arr.length - 1 ]; 
+	     		 	axiosForTrasliteration.get('', {
+	                    params: {
+	                        text: currentVal,
+	                        ime: "transliteration_en_" + 'mr',
+	                        num: 5,
+	                        cp: 0,
+	                        cs: 1,
+	                        ie: "utf-8",
+	                        oe: "utf-8",
+	                        app: "jsapi"
+	                    }
+	                }).then(function(res){
+						arr[arr.length - 1 ] = res.data[1][0][1][0] + ' ';
+						$("#nameMr").val(arr.join(' ')); 
+					    					    
+	                   }).catch(function(err){
+						console.log(err);
+	                   })
+	        	}
+	    	});
+
+	    	// Implementation of auto selection of salutation based on gender:
+	    	
+	    	if("" == 'MALE'){
+	    		$("#sal-1").attr('checked', 'checked');
+				$("#sal-2").attr('disabled', 'disabled');
+				$("#sal-3").attr('disabled', 'disabled');
+				$("#sal-4").attr('disabled', 'disabled');
+		    }else if ("" == 'FEMALE'){
+		    	$("#sal-1").attr('disabled', 'disabled');
+				$("#sal-4").attr('disabled', 'disabled');
+				$("#sal-2").trigger('click');
+			}else if("" == 'TRANSGENDER'){
+				$("#sal-1").attr('disabled', 'disabled');
+				$("#sal-2").attr('disabled', 'disabled');
+				$("#sal-3").attr('disabled', 'disabled');
+				$("#sal-4").trigger('click');
+			}
+			
+	    	$("input[name='person.gender']").change(function(event){
+		    	// alert(event.target.value);
+	    		$("#sal-1").removeAttr('disabled');
+				$("#sal-2").removeAttr('disabled');
+				$("#sal-3").removeAttr('disabled');
+				$("#sal-4").removeAttr('disabled');
+				$("#sal-1").removeAttr('checked');
+				$("#sal-2").removeAttr('checked');
+				$("#sal-3").removeAttr('checked');
+				$("#sal-4").removeAttr('checked');
+				if(event.target.value === 'MALE'){
+					$("#sal-1").attr('checked', 'checked');
+					$("#sal-2").attr('disabled', 'disabled');
+					$("#sal-3").attr('disabled', 'disabled');
+					$("#sal-4").attr('disabled', 'disabled');
+				}else if(event.target.value === 'FEMALE'){
+					// $("#sal-2").attr('checked', 'checked');
+					$("#sal-1").attr('disabled', 'disabled');
+					$("#sal-4").attr('disabled', 'disabled');
+					$("#sal-2").trigger('click');
+				}else if(event.target.value === 'TRANSGENDER'){
+					$("#sal-1").attr('disabled', 'disabled');
+					$("#sal-2").attr('disabled', 'disabled');
+					$("#sal-3").attr('disabled', 'disabled');
+					// $("#sal-4").attr('checked', 'checked');
+					$("#sal-4").trigger('click');
+				}
+		    });
+	    	
+	    	
+						
+			break;
+		case 3: 
+			$("#registerForm").attr("action", "confirmOtp.html");
+			$("#progressLine").width("80%");
+			$("#step-1").addClass("done");
+			$("#step-2").addClass("done");
+			$("#step-3").addClass("active");			
+			countDownVariable = startCountDown();
+			$("#otp").focus();
+		}
+
+
+		$("#step1Post").click(function(){
+			$("#registerForm").attr("action", "step1Post.html");
+			$("#registerForm").submit();
+		});	
+
+		$("#resendOTPBtn").click(function(){
+			$("#registerForm").attr("action", "step3.html");
+			$("#currentCountDown").val(countDownTime);
+			$("#registerForm").submit();
+		});
+		
+		$("#step2Post").click(function(){
+			let uidVal = $("#aadhaarVer1").val() + $("#aadhaarVer2").val() + $("#aadhaarVer3").val();
+			/* let uidVal2 = $("#aadhaarVer").val(); */
+			let mobileVal = $("#mobile").val();
+			/* if(uidVal != uidVal2){
+				$("#aadhaarVerificationDiv").attr("hidden", false);
+			} */
+			if(mobileVal.length < 10 || !$.isNumeric(mobileVal)){
+				$("#mobileErrorDiv").attr("hidden", false);
+			}else{
+				$("#mobileErrorDiv").attr("hidden", true);
+			}
+			if(!vhCheck(uidVal) || !$.isNumeric(uidVal)){
+				$("#aadhaarErrorDiv").attr("hidden", false);
+			}else{
+				$("#aadhaarErrorDiv").attr("hidden", true);
+			}
+			return vhCheck(uidVal) && mobileVal.length == 10 && $.isNumeric(uidVal) && $.isNumeric(mobileVal);
+		});
+		$("#confirmOtp").click(function(){
+			let otpVal = $("#otp").val();
+			// Check for min length
+			if(otpVal.length < 4){
+				alert("Please check otp");
+				return false;
+			}
+			$("#currentCountDown").val(countDownTime);
+			return true;
+		});
+	});
+
+	function vhCheck(uid) {
+		
+		var strVal = uid;
+		if (strVal.length < 12) // Minimum length.
+			return false;
+		return strVal.verhoeffCheck();
+	}
+
+	function stopCountDown(x) {
+		
+		clearInterval(x)
+	}
+	function startCountDown() {
+		var otpTime = '1';
+		if('0' == 0){
+			countDownTime = parseInt(otpTime) * 60;
+		}else{
+			countDownTime = parseInt('0');
+		}
+		
+		$('#otpTimerDiv').show();
+		var stopCountDown = false
+		var x = setInterval(function() {
+			countDownTime = countDownTime - 1
+			var min = Math.floor(countDownTime / 60)
+			var sec = Math.floor(countDownTime % 60)
+			var minZero = ''
+			if (min < 10) {
+				minZero = '0'
+			}
+			var secZero = ''
+			if (sec < 10) {
+				secZero = '0'
+			}
+			if (countDownTime <= 0) {
+				stopCountDown = true
+			}
+			if (stopCountDown) {
+				clearInterval(x);
+				$("#otpExpireDiv").show();
+				$("#otpTimerDiv").hide();
+				$("#resendOTPBtn").show();
+			}
+			document.getElementById('demo').innerHTML = minZero + min + ':'
+					+ secZero + sec + ' ' + 'मिनिटे!';
+		}, 1000)
+		return x;
+	}
+	
+	function isChecked(checkbox, step2Post) {
+		var btn = document.getElementById(step2Post);
+		if (checkbox.checked == true) {
+			$('#myModal').modal('show');
+			btn.disabled = false;
+		} else {
+			btn.disabled = true;
+		}
+	}
+		
+	</script>
+</body>
+
+<!-- Mirrored from punezp.mkcl.org/zillaParishad/citizenRegistration/getRegistrationForm by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 29 Aug 2021 07:18:11 GMT -->
+</html>

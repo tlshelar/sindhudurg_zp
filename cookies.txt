@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+punezp.mkcl.org	TRUE	/zillaParishad/	FALSE	1999999999	SESSION	NzhlMmRjYTgtMzVkOC00MTU2LTkxOTEtZDU5NDBlNTA4Yzdk
+punezp.mkcl.org	TRUE	/zillaParishad	FALSE	1999999999	JSESSIONID	4A2644670476709746875B9F7E99CAF6
+punezp.mkcl.org	TRUE	/cas/	FALSE	1999999999	SESSION	MWY5ZTlkY2UtMzVhYS00Mzk4LTkzZTMtZDBmZGQyNTA4ZWU4
+punezp.mkcl.org	TRUE	/	FALSE	1999999999	SameSite	Lax
+punezp.mkcl.org	TRUE	/	FALSE	1999999999	grav-site-b63a9a9	2u381dcv5jmf51goje9ed6ru1k
+
