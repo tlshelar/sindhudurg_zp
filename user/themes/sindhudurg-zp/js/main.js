@@ -58,7 +58,7 @@ $(function () {
     };
        $('.demo1').easyTicker({
          direction: 'up',
-         visible: 4,
+         visible: 6,
          interval: 2000
        });
        $('.owl-popular').owlCarousel({
